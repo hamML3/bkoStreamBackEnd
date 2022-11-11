@@ -27,6 +27,6 @@ public interface SongServiceInterface {
 
     Mono<Void> deleteSong(Long id);
 
-    Mono<Song> updateSong(Song s);
+    Mono<Song> updateSong(Song s, Long id);
 
 }

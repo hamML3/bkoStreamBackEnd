@@ -95,7 +95,7 @@ public class SongService implements SongServiceInterface{
 
 
     @Override
-    public Mono<Song> updateSong(Song song) {
+    public Mono<Song> updateSong(Song song, Long id) {
         return songRepository.save(song);
     }
 

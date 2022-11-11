@@ -3,8 +3,8 @@ package ml.streaming.bkostream.service.commentsong;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ml.streaming.bkostream.dto.Songdto;
 import ml.streaming.bkostream.model.Comment_Song;
+import ml.streaming.bkostream.model.Song;
 import ml.streaming.bkostream.repository.CommentSongRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -39,13 +39,13 @@ public class CommentSongService implements CommentSongServiceInterface {
     }
 
     @Override
-    public Flux<Comment_Song> findAllBySongOrderByDateDesc(Mono<Songdto> songDtoMono) {
+    public Flux<Comment_Song> findAllBySongOrderByDateDesc(Song song) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public Flux<Comment_Song> showCommentsBySong(Mono<Songdto> songDtoMono) {
+    public Flux<Comment_Song> showCommentsBySong(Song song) {
         // TODO Auto-generated method stub
         return null;
     }
